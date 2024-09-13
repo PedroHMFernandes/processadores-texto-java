@@ -1,4 +1,7 @@
 
 			Este é um    texto de    exemplo! Ele contém caracteres especiais, como @, #, e $. 
-Além disso, tem palavras ofensivas como bobo, tonto, e idiota. 1 2 3 4 5 6 7 8 9
+Além disso, tem palavras ofensivas            como bobo, tonto, e idiota, panaca. 1 2 3 4 5 6 7 8 9
 - + ! ; . ! ? ` ç Ç robirso $ # _
+bobo vadio
+tonto 
+panaca

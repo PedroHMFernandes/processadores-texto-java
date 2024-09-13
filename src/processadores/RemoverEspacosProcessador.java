@@ -4,15 +4,12 @@ import interfaces.ProcessadorTexto;
 
 public class RemoverEspacosProcessador implements ProcessadorTexto {
 
-<<<<<<< HEAD
 	@Override
 	public String processar(String texto) {
-		// replaceAll(" {2,}", " ") - substitui, onde há 2 ou mais espaços, por apenas um espaço
+		// replaceAll(" {2,}", " ") - substitui, onde há 2 ou mais espaços, por apenas
+		// um espaço
 		// trim() - remove espaços em branco nas extremidades
 		return texto.replaceAll(" {2,}", " ").trim();
 
 	}
 }
-=======
-}
->>>>>>> 7beb2c06f7aaba768485df349148f31f5f402992

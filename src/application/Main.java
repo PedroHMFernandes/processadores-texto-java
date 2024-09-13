@@ -12,6 +12,7 @@ import java.util.Scanner;
 import interfaces.ProcessadorTexto;
 import processadores.RemoverCaracteresEspeciaisProcessador;
 import processadores.RemoverEspacosProcessador;
+import processadores.RemoverParalavrasOfensivasProcessador;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +33,7 @@ public class Main {
         List<ProcessadorTexto> processadores = new ArrayList<>();
         processadores.add(new RemoverEspacosProcessador());
         processadores.add(new RemoverCaracteresEspeciaisProcessador());
-
+        processadores.add(new RemoverParalavrasOfensivasProcessador());
         // Encadeamento dos processadores
         String textoProcessado = texto;
         for (ProcessadorTexto processador : processadores) {
