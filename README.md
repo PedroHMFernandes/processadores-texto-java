@@ -125,3 +125,12 @@ O cliente pediu um novo recurso para o sistema. Agora, além de remover espaços
     • Remoção de palavras ofensivas (implementada por você neste momento).
 
 3. O sistema gera um arquivo de saída com o texto final processado.
+
+
+# Diagrama de classe UML
+## Sem Chain of Responsability
+![image](https://github.com/user-attachments/assets/75885d13-af46-4235-bb58-54df6cd2b0ca)
+
+## Com Chain of Responsability
+![image](https://github.com/user-attachments/assets/c0093704-2282-4ebf-98c4-b9b81183fe35)
+
