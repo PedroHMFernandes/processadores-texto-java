@@ -37,7 +37,7 @@ public class RemoverParalavrasOfensivasProcessador implements ProcessadorTexto {
 		return texto;
 	}
 
-	private static String lerArquivo(String pathPalavrasOfensivas) {
+	private String lerArquivo(String pathPalavrasOfensivas) {
 		StringBuilder conteudo = new StringBuilder();
 		try (BufferedReader br = new BufferedReader(new FileReader(pathPalavrasOfensivas))) {
 			String linha;
