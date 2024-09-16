@@ -4,17 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-import interfaces.ProcessadorTexto;
-
-public class RemoverParalavrasOfensivasProcessador implements ProcessadorTexto {
+public class RemoverPalavrasOfensivasProcessador extends ProcessadorBase {
 
 	private String pathPalavrasOfensivas;
 
-	public RemoverParalavrasOfensivasProcessador() {
+	public RemoverPalavrasOfensivasProcessador() {
 		this.pathPalavrasOfensivas = "palavras_ofensivas.txt";
 	}
 
-	public RemoverParalavrasOfensivasProcessador(String pathPalavrasOfensivas) {
+	public RemoverPalavrasOfensivasProcessador(String pathPalavrasOfensivas) {
 		this.pathPalavrasOfensivas = pathPalavrasOfensivas;
 	}
 
@@ -27,10 +25,10 @@ public class RemoverParalavrasOfensivasProcessador implements ProcessadorTexto {
 	}
 
 	@Override
-	public String processar(String texto) {
+	public String processarTexto(String texto) {
 		String palavrasOfensivas = lerArquivo(pathPalavrasOfensivas);
 		String[] vetorPalavras = palavrasOfensivas.split("\\n");
-		
+
 		for (String palavra : vetorPalavras) {
 			texto = texto.replace(palavra.trim(), "[REMOVIDO]");
 		}
